@@ -56,7 +56,7 @@ $ hexo generate
 ``` bash
 $ hexo server
 ```
-浏览器输入'http://localhost:4000'，可以看到自己的Blog
+浏览器输入[http://localhost:4000]，可以看到自己的Blog
 
 #### 部署托管页面
 部署前需要修改_config.yml文件，来建立与托管平台关联

@@ -1,6 +1,4 @@
----
-title: My Blog
----
+
 通过博客平台 [Hexo](https://hexo.io) 编辑发布文档，静态页面托管在 [GitHub Pages](https://pages.github.com)
 
 ## GitHub Pages 创建
@@ -18,6 +16,7 @@ GitHub上新建个人网站项目，在页面右上角点击 **+** 加号按钮�
 
 点击我们的个人网站项目设置选项卡，滚动到下面，就会发现一个自定义域名卡片 `Custom domain`
 ![Custom domain](http://img.blog.csdn.net/20160814135316742)
+
 输入已购买的域名，域名服务配置见[下文](##域名设置)，然后点击保存。
 保存完成，会自动在仓库根目录下创建文件 `CNAME`,其中保存配置的域名
 
@@ -57,7 +56,7 @@ $ hexo generate
 ``` bash
 $ hexo server
 ```
-浏览器输入http://localhost:4000，可以看到自己的Blog
+浏览器输入'http://localhost:4000'，可以看到自己的Blog
 
 #### 部署托管页面
 部署前需要修改_config.yml文件，来建立与托管平台关联
@@ -82,7 +81,7 @@ $ hexo clean
 $ hexo generate
 $ hexo deploy
 ```
-完成后可以在浏览器中直接访问http://suntenghub.github.io/即可看到部署的blog页面
+完成后可以在浏览器中直接访问[http://suntenghub.github.io](http://suntenghub.github.io)即可看到部署的blog页面
 
 ### 新建文章
 Hexo的目录结构

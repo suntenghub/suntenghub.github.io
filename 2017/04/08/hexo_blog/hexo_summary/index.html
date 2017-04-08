@@ -5,17 +5,17 @@
   
   <title>Hexo Summary | sunteng.pub.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hexo 创建 Blog 的一些技巧设置  让文章只显示一部分和一个阅读全文的按钮">
+  <meta name="description" content="Hexo 创建 Blog 的一些技巧设置  让文章只显示一部分和一个阅读全文的按钮部署时保证README.md不被渲染">
 <meta name="keywords">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo Summary">
 <meta property="og:url" content="http://yoursite.com/2017/04/08/hexo_blog/hexo_summary/index.html">
 <meta property="og:site_name" content="sunteng.pub.com">
-<meta property="og:description" content="Hexo 创建 Blog 的一些技巧设置  让文章只显示一部分和一个阅读全文的按钮">
-<meta property="og:updated_time" content="2017-04-08T10:45:19.000Z">
+<meta property="og:description" content="Hexo 创建 Blog 的一些技巧设置  让文章只显示一部分和一个阅读全文的按钮部署时保证README.md不被渲染">
+<meta property="og:updated_time" content="2017-04-08T11:07:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Summary">
-<meta name="twitter:description" content="Hexo 创建 Blog 的一些技巧设置  让文章只显示一部分和一个阅读全文的按钮">
+<meta name="twitter:description" content="Hexo 创建 Blog 的一些技巧设置  让文章只显示一部分和一个阅读全文的按钮部署时保证README.md不被渲染">
   
     <link rel="alternate" href="/atom.xml" title="sunteng.pub.com" type="application/atom+xml">
   
@@ -87,14 +87,17 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Hexo 创建 Blog 的一些技巧设置 </p>
-<p><a href="#1">让文章只显示一部分和一个阅读全文的按钮</a></p>
+<p><a href="#1">让文章只显示一部分和一个阅读全文的按钮</a><br><a href="#2">部署时保证README.md不被渲染</a></p>
 <a id="more"></a>
 <h2 id="让文章只显示一部分和一个阅读全文的按钮"><a href="#让文章只显示一部分和一个阅读全文的按钮" class="headerlink" title="让文章只显示一部分和一个阅读全文的按钮"></a>让文章只显示一部分和一个<code>阅读全文</code>的按钮</h2><p>在文章中加一个 &lt;!--more--&gt;， &lt;!--more--&gt; 后面的内容就不会显示出来了。</p>
+<h2 id="部署时保证README-md不被渲染"><a href="#部署时保证README-md不被渲染" class="headerlink" title="部署时保证README.md不被渲染"></a>部署时保证README.md不被渲染</h2><p>Hexo根目录下的<code>/source</code>文件夹下添加一个<strong>README.md</strong>。修改<strong>_config.yml</strong>的<strong>skip_render</strong>参数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">skip_render: README.md</div></pre></td></tr></table></figure>
+<p>使用hexo generate 命令就不会再渲染 <strong>README.md</strong> 这个文件了。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/08/hexo_blog/hexo_summary/" data-id="cj1950n0q0002ctq9hnukyltl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/04/08/hexo_blog/hexo_summary/" data-id="cj195pjh40001ioq9oy889qw6" class="article-share-link">Share</a>
       
       
     </footer>
